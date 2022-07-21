@@ -6,20 +6,26 @@
   <Greet :name="name" :job="job" /> -->
   
   <!-- <Artical id="my-artical" title='title' :likes='50' :published="true"/> -->
-  <Form />
+  <!-- <Form /> -->
+  <!-- <CompProps /> -->
+  <WatcherComp/>
   </div>
 </template>
 
 <script>
-// import Greet fro m './components/GreetUs.vue'
+// import Greet from './components/GreetUs.vue'
 // import Artical from './components/ArticalComp.vue'
-import Form from './components/FormHandling.vue'
+// import Form from './components/FormHandling.vue'
+// import CompProps from './components/CompProps.vue'
+import WatcherComp from './components/WatcherComp.vue'
 export default {
   name: 'App',
   components: {
     // Greet,
     // Artical,
-    Form
+    // Form,
+    // CompProps,
+    WatcherComp,
   },
   data(){
     return {

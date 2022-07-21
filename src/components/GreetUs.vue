@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2>{{ name }} - {{ job }}</h2>
+        <!-- <h2 v-pre>{{ name }} - {{ job }}</h2> -->
     </div>
 </template>
 
