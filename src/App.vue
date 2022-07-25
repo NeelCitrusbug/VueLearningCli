@@ -8,7 +8,17 @@
   <!-- <Artical id="my-artical" title='title' :likes='50' :published="true"/> -->
   <!-- <Form /> -->
   <!-- <CompProps /> -->
-  <WatcherComp/>
+  <!-- <WatcherComp/> -->
+
+
+  <!-- <h2>App comp username {{ name }}</h2>
+  <ComponentC/> -->
+
+  <!-- <button @click="showPopup=true">Show Popup</button>
+  <PopUp v-show="showPopup" @close="closePopUp" /> -->
+
+  <Input v-model="name"/>
+
   </div>
 </template>
 
@@ -17,7 +27,12 @@
 // import Artical from './components/ArticalComp.vue'
 // import Form from './components/FormHandling.vue'
 // import CompProps from './components/CompProps.vue'
-import WatcherComp from './components/WatcherComp.vue'
+// import WatcherComp from './components/WatcherComp.vue'
+// import ComponentC from './components/ComponentC.vue'
+// import PopUp from './components/PopUp.vue'
+
+import Input from './components/InputComp.vue'
+
 export default {
   name: 'App',
   components: {
@@ -25,7 +40,10 @@ export default {
     // Artical,
     // Form,
     // CompProps,
-    WatcherComp,
+    // WatcherComp,
+    // ComponentC,
+    // PopUp,
+    Input
   },
   data(){
     return {
@@ -33,7 +51,19 @@ export default {
       job:'developer',
       formValues:{
         name:''
-      }
+      },
+      showPopup:false,
+    }
+  },
+  methods:{
+    closePopUp(name){
+      this.showPopup = false;
+      console.log("name",name)
+    }
+  },
+  provide(){
+    return{
+        userName:this.name,
     }
   }
 }
