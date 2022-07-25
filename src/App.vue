@@ -17,7 +17,44 @@
   <!-- <button @click="showPopup=true">Show Popup</button>
   <PopUp v-show="showPopup" @close="closePopUp" /> -->
 
-  <Input v-model="name"/>
+  <!-- <Input v-model="name"/> -->
+
+  <!-- <Card/>
+
+  <Card>
+    Card content
+  </Card>
+  <Card>
+    <h2>Card content</h2> 
+  </Card>
+
+  <Card>
+    <img src="https://picsum.photos/200" alt="img">
+  </Card>
+
+  <Card>
+    <template v-slot:header>
+      Header
+    </template>
+    <template v-slot:default>
+      <img src="https://picsum.photos/200" alt="img">
+    </template>
+    <template v-slot:footer>
+      Details
+    </template>
+    
+  </Card> -->
+
+  <!-- <NameList>
+      <template v-slot:default="slotProps">
+        {{ slotProps.firstName }} {{ slotProps.lastName }}
+      </template>
+  </NameList> -->
+
+  <h4>App component text</h4>
+  <ChildeStyles>
+    <h4>Childe Styles component text</h4>
+  </ChildeStyles>
 
   </div>
 </template>
@@ -31,7 +68,10 @@
 // import ComponentC from './components/ComponentC.vue'
 // import PopUp from './components/PopUp.vue'
 
-import Input from './components/InputComp.vue'
+// import Input from './components/InputComp.vue'
+// import Card from './components/CardComp.vue'
+// import NameList from './components/NameList.vue'
+import ChildeStyles from './components/ChildeStyles.vue'
 
 export default {
   name: 'App',
@@ -43,7 +83,10 @@ export default {
     // WatcherComp,
     // ComponentC,
     // PopUp,
-    Input
+    // Input,
+    // Card,
+    // NameList,
+    ChildeStyles,
   },
   data(){
     return {
@@ -69,7 +112,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -77,5 +120,8 @@ export default {
   /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
+}
+h4{
+  color:orange;
 }
 </style>
