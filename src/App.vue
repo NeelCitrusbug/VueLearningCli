@@ -51,10 +51,26 @@
       </template>
   </NameList> -->
 
-  <h4>App component text</h4>
+  <!-- <h4>App component text</h4>
   <ChildeStyles>
     <h4>Childe Styles component text</h4>
-  </ChildeStyles>
+  </ChildeStyles> -->
+
+  <!-- <button @click="activeTab='TabA'">TabA</button>
+  <button @click="activeTab='TabB'">TabB</button>
+  <button @click="activeTab='TabC'">TabC</button>
+
+  <keep-alive>
+  <component :is="activeTab" />
+  </keep-alive> -->
+
+  <!-- <teleport to="#portal-root">
+  <Portal/>
+  </teleport> -->
+
+  <!-- <PostList/> -->
+  
+  <CreatePost/>
 
   </div>
 </template>
@@ -71,7 +87,18 @@
 // import Input from './components/InputComp.vue'
 // import Card from './components/CardComp.vue'
 // import NameList from './components/NameList.vue'
-import ChildeStyles from './components/ChildeStyles.vue'
+// import ChildeStyles from './components/ChildeStyles.vue'
+
+// import TabA from './components/TabA.vue'
+// import TabB from './components/TabB.vue'
+// import TabC from './components/TabC.vue'
+
+// import Portal from './components/PortalComp.vue'
+
+// import PostList from './components/PostList.vue'
+
+import CreatePost from './components/CreatePost.vue'
+
 
 export default {
   name: 'App',
@@ -86,7 +113,13 @@ export default {
     // Input,
     // Card,
     // NameList,
-    ChildeStyles,
+    // ChildeStyles,
+    // TabA,
+    // TabB,
+    // TabC,
+    // Portal,
+    // PostList,
+    CreatePost,
   },
   data(){
     return {
@@ -96,6 +129,7 @@ export default {
         name:''
       },
       showPopup:false,
+      activeTab:'TabA',
     }
   },
   methods:{
@@ -117,7 +151,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
+  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
