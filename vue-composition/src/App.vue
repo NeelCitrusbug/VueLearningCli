@@ -8,7 +8,9 @@
         <!-- <VModel/> -->
 
         <!-- <Computed/> -->
-        <Watch/>
+        <!-- <Watch/> -->
+        <!-- <ProvideInject/> -->
+        <Lifecycle/>
     </div>
 </template>
 
@@ -17,7 +19,9 @@
 // import Methods from './components/MethodsComp.vue'
 // import VModel from './components/VModel.vue'
 // import Computed from './components/ComputedComp.vue'
-import Watch from './components/WatchComp.vue'
+// import Watch from './components/WatchComp.vue'
+// import ProvideInject from './components/ProvideInject.vue'
+import Lifecycle from './components/LifecycleC.vue'
 
 export default {
   name: 'App',
@@ -27,7 +31,9 @@ export default {
     // Methods,
     // VModel,
     // Computed,
-    Watch,
+    // Watch,
+    // ProvideInject,
+    Lifecycle,
   }
 }
 </script>
