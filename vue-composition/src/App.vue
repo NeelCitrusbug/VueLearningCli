@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+        <!-- <Data/> -->
+
+        <!-- <DemoOne/> -->
+
+        <!-- <Methods/> -->
+        <VModel/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Data from './components/DataComp.vue'
+// import Methods from './components/MethodsComp.vue'
+import VModel from './components/VModel.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // Data,
+    // DemoOne,
+    // Methods,
+    VModel,
   }
 }
 </script>
