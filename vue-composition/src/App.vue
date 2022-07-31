@@ -12,7 +12,9 @@
         <!-- <ProvideInject/> -->
         <!-- <Lifecycle/> -->
         <!-- <TemplateRef/> -->
-        <Person/>
+        <!-- <Person/> -->
+        <ClickCounter/>
+        <HoverCounter/>
     </div>
 </template>
 
@@ -25,7 +27,9 @@
 // import ProvideInject from './components/ProvideInject.vue'
 // import Lifecycle from './components/LifecycleC.vue'
 // import TemplateRef from './components/TemplateRef.vue'
-import Person from './components/PersonComp.vue'
+// import Person from './components/PersonComp.vue'
+import ClickCounter from './components/ClickCounter.vue'
+import HoverCounter from './components/HoverCounter.vue'
 
 export default {
   name: 'App',
@@ -39,7 +43,9 @@ export default {
     // ProvideInject,
     // Lifecycle,
     // TemplateRef,
-    Person,
+    // Person,
+    ClickCounter,
+    HoverCounter,
   }
 }
 </script>
