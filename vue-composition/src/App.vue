@@ -10,7 +10,9 @@
         <!-- <Computed/> -->
         <!-- <Watch/> -->
         <!-- <ProvideInject/> -->
-        <Lifecycle/>
+        <!-- <Lifecycle/> -->
+        <!-- <TemplateRef/> -->
+        <Person/>
     </div>
 </template>
 
@@ -21,7 +23,9 @@
 // import Computed from './components/ComputedComp.vue'
 // import Watch from './components/WatchComp.vue'
 // import ProvideInject from './components/ProvideInject.vue'
-import Lifecycle from './components/LifecycleC.vue'
+// import Lifecycle from './components/LifecycleC.vue'
+// import TemplateRef from './components/TemplateRef.vue'
+import Person from './components/PersonComp.vue'
 
 export default {
   name: 'App',
@@ -33,7 +37,9 @@ export default {
     // Computed,
     // Watch,
     // ProvideInject,
-    Lifecycle,
+    // Lifecycle,
+    // TemplateRef,
+    Person,
   }
 }
 </script>
