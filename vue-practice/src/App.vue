@@ -70,7 +70,14 @@
 
   <!-- <PostList/> -->
   
-  <CreatePost/>
+  <!-- <CreatePost/> -->
+
+  <!-- <Parent/> -->
+
+  <!-- <TemplateRef/> -->
+
+  <ClickCounter/>
+  <HoverCounter/>
 
   </div>
 </template>
@@ -97,9 +104,13 @@
 
 // import PostList from './components/PostList.vue'
 
-import CreatePost from './components/CreatePost.vue'
+// import CreatePost from './components/CreatePost.vue'
 
+// import Parent from './components/ParentComp.vue'
 
+// import TemplateRef from './components/TemplateRef.vue'
+import ClickCounter from './components/ClickCounter.vue'
+import HoverCounter from './components/HoverCounter.vue'
 export default {
   name: 'App',
   components: {
@@ -119,7 +130,11 @@ export default {
     // TabC,
     // Portal,
     // PostList,
-    CreatePost,
+    // CreatePost,
+    // Parent,
+    // TemplateRef,
+    ClickCounter,
+    HoverCounter,
   },
   data(){
     return {
