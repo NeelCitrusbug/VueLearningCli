@@ -5,14 +5,19 @@
         <!-- <DemoOne/> -->
 
         <!-- <Methods/> -->
-        <VModel/>
+        <!-- <VModel/> -->
+
+        <!-- <Computed/> -->
+        <Watch/>
     </div>
 </template>
 
 <script>
 // import Data from './components/DataComp.vue'
 // import Methods from './components/MethodsComp.vue'
-import VModel from './components/VModel.vue'
+// import VModel from './components/VModel.vue'
+// import Computed from './components/ComputedComp.vue'
+import Watch from './components/WatchComp.vue'
 
 export default {
   name: 'App',
@@ -20,7 +25,9 @@ export default {
     // Data,
     // DemoOne,
     // Methods,
-    VModel,
+    // VModel,
+    // Computed,
+    Watch,
   }
 }
 </script>
